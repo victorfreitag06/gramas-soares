@@ -295,6 +295,7 @@ section.sobre-nos {
 .containerContato {
   background-color: #099334;
   display: flex;
+  justify-content: space-around;
   padding: 0px 120px;
   align-items: center;
 }
@@ -367,9 +368,9 @@ label,.form-section h2{
   background-color: rgb(156, 241, 161);
 }
 .image-section {
-  flex: 1;
+
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 
@@ -627,5 +628,18 @@ label,.form-section h2{
     .form-section{
       
     }
+    .image-section{
+      img{
+        margin: 20px 0;
+        width: 350px;
+      }
+    }
+  }
+  .feedback-container{
+    padding: 10px;
+    flex-direction: column;
+  }
+  .faq-container{
+    padding: 5px 50px;
   }
 }
