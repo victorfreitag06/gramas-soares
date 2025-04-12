@@ -592,10 +592,14 @@ label,.form-section h2{
   }
   .hero{
     width: 100%;
-    margin: 0px 15px;
+    margin: 0px;
     flex-direction: column-reverse;
     text-align: center;
-    .hero-image img{
+    .hero-image {
+      display: flex;
+      justify-content: center;  
+    }    
+      img{
       width: 360px;
       padding: 20px 0;
 
