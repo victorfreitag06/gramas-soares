@@ -617,16 +617,18 @@ label,.form-section h2{
     flex-direction: column;
     gap: 35px;
     padding: 0px;
-    margin: 0px 50px;
+    margin: 20pxpx 50px;
     .card{
-      width: 250px;
+      width: 300px;
     }
   }
   .containerContato{
-    padding: 0 20px;
+    padding: 30px 20px;
     flex-direction: column;
+    border-bottom-left-radius:105px;
+    border-bottom-right-radius: 105px;
     .form-section{
-      
+    width: 350px;
     }
     .image-section{
       img{
