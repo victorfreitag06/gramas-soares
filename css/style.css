@@ -679,6 +679,113 @@ label,
   }
 
 }
+@media (max-width: 850px) {
+  .botaoContato{
+    display: none;
+  }
+  .logo{
+    span{
+      display: none;
+    }
+  }
+  .hero{
+    flex-direction: column-reverse;
+    text-align: center;
+    .hero{
+      margin: 0;
+    }
+    .hero-text{
+      width: 100%;
+      h1{
+        font-size: 55px;
+      }
+    }
+  }
+  section.sobre-nos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    .content-sobre{
+      flex-direction: column;
+      gap: 20px;
+      .left{
+        width: 80%;
+      }
+      .right{
+        width: 100%;
+        h2{
+          font-size: 3rem;
+        }
+        p{
+          font-size: 20px;
+        }
+        
+      }
+    }
+    
+  }
+  .confiar-container{
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    .confiar-texto{
+      h2{
+        font-size: 3rem;
+      }
+      p{
+        font-size: 20px;
+      }
+    }
+    .confiar-imagem{
+      width: 80%;
+    }
+  }
+  .secao-grama{
+    .conteudo-grama{
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+.texto-grama{
+  width: 100%;
+  h2{
+    font-size: 3rem;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+.nossasGramas{
+  display: flex;
+  justify-content: center;
+}
+.cards{
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.containerContato{
+  flex-direction: column;
+  padding: 0 40px;
+  border-bottom-left-radius: 85px;
+  border-bottom-right-radius: 85px;
+}
+form{
+  padding-top: 20px;
+}
+.image-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  img{
+    width: 60%;
+  }
+}
+}
+
 @media (max-width: 400px) {
   header {
     margin: 10px 0px;
@@ -776,10 +883,9 @@ label,
     }
 
     .beneficios {
-      display: flex;
       align-items: center;
       justify-content: center;
-      width: 93%;
+      width: 100%;
 
       span {
         font-size: 12px;
@@ -821,30 +927,30 @@ label,
 
   .carousel {
     overflow-x: auto;
-    scroll-snap-type: none;
-    padding: 40px 0;
-    text-align: center;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 0;
   }
-
+  
   .cards {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     padding: 0 16px;
-    margin: 0;   
-     text-align: center;
+    margin: 0;
+    width: max-content;
+    flex-direction: row;
   }
-
+  
   .card {
     flex: 0 0 80%;
     max-width: 300px;
     scroll-snap-align: center;
-
+    background: #f9f9f9;
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
-
   .containerContato {
     padding: 30px 20px;
 
@@ -889,108 +995,8 @@ label,
     padding: 5px 50px;
   }
 }
-@media (max-width: 850px) {
-    .botaoContato{
-      display: none;
-    }
-    .logo{
-      span{
-        display: none;
-      }
-    }
-    .hero{
-      flex-direction: column-reverse;
-      text-align: center;
-      .hero{
-        margin: 0;
-      }
-      .hero-text{
-        width: 100%;
-        h1{
-          font-size: 55px;
-        }
-      }
-    }
-    section.sobre-nos{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding: 0 0;
-      text-align: center;
-      .content-sobre{
-        flex-direction: column;
-        .left{
-          width: 100%;
-        }
-        .right{
-          width: 100%;
-          h2{
-            font-size: 3rem;
-          }
-          p{
-            font-size: 20px;
-          }
-          
-        }
-      }
-      
-    }
-    .confiar-container{
-      justify-content: center;
-      flex-direction: column-reverse;
-      align-items: center;
-      text-align: center;
-      .confiar-texto{
-        h2{
-          font-size: 3rem;
-        }
-        p{
-          font-size: 20px;
-        }
-      }
-      .confiar-imagem{
-        width: 100%;
-      }
-    }
-    .secao-grama{
-      .conteudo-grama{
-      flex-direction: column;
-      gap: 25px;
-    }
-  }
-  .texto-grama{
-    width: 100%;
-    h2{
-      font-size: 3rem;
-    }
-    p{
-      font-size: 20px;
-    }
-  }
-  .nossasGramas{
-    display: flex;
-    justify-content: center;
-  }
-  .cards{
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .containerContato{
-    flex-direction: column;
-    padding: 0 40px;
-    border-bottom-left-radius: 85px;
-    border-bottom-right-radius: 85px;
-  }
-  form{
-    padding-top: 20px;
-  }
-  .image-section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    img{
-      width: 60%;
-    }
+@media (max-width: 370px) {
+  .beneficios{
+    display: none;
   }
 }
