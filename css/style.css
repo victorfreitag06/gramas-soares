@@ -805,22 +805,25 @@ form{
 }
 
 @media (max-width: 500px) {
-  header {
+  .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+  }
+  header {
+
     margin: 20px 8px;
     padding: 5px;
 
   }
 
   nav {
-    gap: 15px;
-    align-items: center;
+    gap: 25px;
+
   }
 
   nav a {
     margin: 0;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
   }
 
